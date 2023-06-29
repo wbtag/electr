@@ -1,4 +1,5 @@
 seat_dist <- function(parties,V,total,seats=200,threshold=0.05) {
+  V[is.na(V)] <- 0
   regseats <- regseats(V,total)
   adv <- adv(parties,V,total,threshold=threshold)
   adp <- adv[1]

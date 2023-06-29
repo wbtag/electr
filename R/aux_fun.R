@@ -15,7 +15,7 @@ regseats <- function(V,total,seats=200) {
   rmc <- rmc(total,seats)
   regvotes <- numeric(ncol(V))
   for (i in 1:ncol(V)) {
-    regvotes[i] <- sum(na.omit(V[,i]))
+    regvotes[i] <- sum(V[,i])
   }
   regseats <- regvotes/rmc
   rem <- seats-sum(floor(regseats))

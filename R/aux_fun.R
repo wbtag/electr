@@ -28,7 +28,7 @@ regseats <- function(V,total,seats=200) {
       rem <- rem-1
     }
   }
-  print(regseats)
+  regseats
 }
 
 skr_1 <- function(str, V, S) {
@@ -50,10 +50,10 @@ skr_1 <- function(str, V, S) {
       rem <- rem+1
     }
     seats <- as.numeric(seats)
-    print(seats)
+    seats
   } else {
     seats <- floor(seats)
-    print(seats)
+    seats
   }
 }
 

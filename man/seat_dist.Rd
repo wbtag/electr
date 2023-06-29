@@ -32,3 +32,4 @@ A data frame of party seat gains in electoral districts and in the election as a
 Vojtěch Vít Greger is a graduate of Political Science at the Faculty of Social Sciences of the Charles University in Prague.
 }
 
+

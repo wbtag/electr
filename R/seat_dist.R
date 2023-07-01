@@ -78,6 +78,6 @@ seat_dist <- function(parties,V,total,seats=200,threshold=0.05) {
     adp <- rbind(adp,colSums(adp))
     rownames(adp)[nrow(adv)+1] <- "Total"
     print(adp[ncol])
-    adp
+    return(adp)
   }
 }

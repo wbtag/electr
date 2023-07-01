@@ -69,3 +69,14 @@ skr_2 <- function(str,V,S,skr_1) {
   divrem <- V-Qv
   divrem
 }
+
+dhondt <- function(V,seats) {
+  dis <- 0
+  while (seats > dis) {
+    row <- which.max(V[,2])
+    V[row,3] <- V[row,3] + 1
+    V[row,2] <- V[row,1]/(1+V[row,3])
+    dis <- dis + 1
+  }
+  return(V[3])
+}

@@ -8,4 +8,4 @@ Planned features:
 -   Historical seat distribution mechanisms (1996 Election Act version, potentially others)
 -   Separate thresholds for coalitions
 
-The package comes with a dataset of party vote gains in the 2021 Chamber of Deputies election, called psp21.
+The package comes with two datasets of party vote gains in the 2017 and 2021 Chamber of Deputies elections, called psp17 and psp21.

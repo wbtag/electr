@@ -2,6 +2,7 @@ rmc <- function(total,seats=200) {
   seats <- seats
   rmc <- sum(total)/seats
   rmc <- round(rmc)
+  return(rmc)
 }
 
 adv <- function(parties,V,total,threshold=0.05) {

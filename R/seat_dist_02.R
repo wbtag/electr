@@ -1,4 +1,4 @@
-seat_dist02 <- function(parties, V, total, seats=200, threshold=0.05) {
+seat_dist_02 <- function(parties, V, total, seats=200, threshold=0.05) {
   V[is.na(V)] <- 0
   regseats <- regseats(V,total,seats)
   adv <- adv(parties,V,total,threshold)
@@ -14,13 +14,11 @@ seat_dist02 <- function(parties, V, total, seats=200, threshold=0.05) {
     rm(r)
   }
   rownames(adp) <- adp[,1]
+  colnames(adp)[2:ncol] <- colnames(V)
   adp <- adp[-1]
   adp$Total <- rowSums(adp)
-  nrow <- nrow(adp)
-  adp <- rbind(adp,colSums(adp))
-  rownames(adp)[nrow+1] <- "Total"
   print(adp[ncol])
-  return(adp)
+  adp
 }
 
 

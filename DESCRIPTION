@@ -1,10 +1,10 @@
 Package: electr
 Type: Package
-Title: Parliamentary Election Seat Calculator
-Version: 0.1.0
+Title: Czech Parliamentary Election Seat Calculator
+Version: 1.1.0
 Author: Mgr. Vojtěch Greger
 Maintainer: Mgr. Vojtěch Greger <vojtech@vbtag.cz>
-Description: Simple package for converting election votes into parliamentary seats pursuant to Law no. 247/1995. 
+Description: Simple package for converting election votes into parliamentary seats pursuant to Czech law. 
 Imports: 
     dplyr
 License: GPL-3
